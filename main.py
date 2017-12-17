@@ -15,6 +15,13 @@ def start():
 	else:
 		print("Successfully found working directory!")
 		print("Directory: "+dir)
+	print("Getting current home directory...")
+	homedir = os.environ['HOME']
+	if bool(homedir) == False:
+		print("Could not get current home directory!")
+	else:
+		print("Successfully found the current home directory!")
+		print("Home directory: "+homedir)
 		
 start()
 input()
