@@ -10,7 +10,7 @@ print("")
 def start():
 	print("Getting current working directory...")
 	dir = os.getcwd()
-	if bool(dir) == false:
+	if bool(dir) == False:
 		print("Could not get current directory!")
 	else:
 		print("Successfully found working directory!")
